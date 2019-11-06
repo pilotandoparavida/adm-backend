@@ -1,7 +1,8 @@
 {
   "name": "adm_backend_ppv",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "src/server.js",
+  "private": true,
   "license": "MIT",
   "author": {
     "name": "Giovanna Garcia Basilio",
@@ -12,16 +13,11 @@
     "Giovanna Garcia Basilio <ggarciabas@gmail.com> (euelecavaloaco.github.io)"
   ],
   "dependencies": {
-    "controller_ppv": "git+https://ggb-heroku:9odvTyy3jpG33jje@github.com/ggarciabas/controller_ppv.git#master",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "model_ppv": "git+https://ggb-heroku:9odvTyy3jpG33jje@github.com/ggarciabas/model_ppv.git#master",
-    "mongoose": "^5.7.7"
-  },
-  "devDependencies": {
-    "controller_ppv_dev": "file:../controller_ppv",
-    "model_ppv_dev": "file:../model_ppv",
-    "nodemon": "^1.19.4"
+    "mongoose": "^5.7.7",
+    "react-controller": "git+https://github.com/pilotandoparavida/react-controller.git#production",
+    "react-model": "git+https://github.com/pilotandoparavida/react-model.git#production"
   },
   "scripts": {
     "dev": "nodemon src/server.js",
