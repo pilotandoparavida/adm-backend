@@ -8,12 +8,11 @@ Aqui está a implemetação do servidor de controle da parte administrativa.
 
 ## Colaboradores
 
-@ggarciabas
+[@ggarciabas](https://github.com/ggarciabas)
 
-@fritsche
+[@fritsche](https://github.com/fritsche)
 
 Esta implementação foi desenvolvida de forma voluntária para auxiliar na administração de turmas e alunos do projeto.
-
 
 ## Módulos utilizados
 
