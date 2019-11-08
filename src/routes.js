@@ -3,12 +3,14 @@ let path_controller = 'react-controller'
 if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
     path_controller = 'react-controller-dev';
 }
-const {TurmaController, AlunoController, MotoController, AdministradorController} = require(path_controller);
+const {AlunoTurmaController, TurmaController, AlunoController, MotoController, AdministradorController} = require(path_controller);
 const routes = express.Router();
 
 routes.get('/', (req, res) =>{
     res.status(404).send("Implementação de serviços para versão administrativa do aplicativo Pilotando Para Vida!");
 });
+
+routes.get('/aluno/turma', AlunoTurmaController.show);
 
 routes.get('/turma/:turma_id', TurmaController.show);
 routes.post('/turma/cadastro', TurmaController.store); 
