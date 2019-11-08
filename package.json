@@ -22,10 +22,5 @@
   "scripts": {
     "dev": "nodemon src/server.js",
     "start": "node src/server.js"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.4",
-    "react-controller-dev": "file:../react-controller",
-    "react-model-dev": "file:../react-model"
   }
 }
